@@ -1,0 +1,50 @@
+<div class="col-md-6 user-container">
+    <h2 class="text-center">Add User</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onUpdate()">
+        <div class="form-group">
+            <label for="username">Nome de Usuario:</label>
+            <input type="text" formControlName="username" placeholder="Nome do Usuario" name="username" class="
+            form-control" id="username">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" formControlName="password" placeholder="password" name="password" class="
+            form-control" id="password">
+        </div>
+
+        <div class="form-group">
+            <label for="firstName">Nome:</label>
+            <input type="text" formControlName="firstName" placeholder="Nome" name="firstName" class="
+            form-control" id="firstName">
+        </div>
+
+
+        <div class="form-group">
+            <label for="lastName">Sobrenome:</label>
+            <input type="text" formControlName="lastName" placeholder="Sobrenome" name="lastName" class="
+            form-control" id="lastName">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Idade:</label>
+            <input type="number" formControlName="age" placeholder="Idade" name="age" class="
+            form-control" id="age">
+        </div>
+
+        <div class="form-group">
+            <label for="salary">Salario:</label>
+            <input type="number" formControlName="salary" placeholder="Salario" name="salary" class="
+            form-control" id="salary">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" formControlName="email" placeholder="Email" name="email" class="
+            form-control" id="email">
+        </div>
+        <br>
+        <button class="btn btn-success">Atualizar Usuário</button>
+    </form>
+</div>
+

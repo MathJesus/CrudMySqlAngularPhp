@@ -1,0 +1,115 @@
+<div class="container-fluid">
+    <div class="row d-flex align-items-center text-center">
+        <div class="col-md-7 text-left">
+            <h1 class="text-white font-weight-bold">Seja bem-vindo!</h1>
+            <h6 class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Pellentesque elementum dolor pretium
+                sodales viverra. Nullam cursus justo nunc, id convallis nulla rutrum vitae. Nunc venenatis vestibulum
+                magna eleifend faucibus.
+            </h6>
+        </div>
+        <div class="col-md-5 bg-white d-flex align-items-center">
+            <div>
+                <img src="../../assets/lands-endslide__800x600.jpg" class="logotipo"><br>
+                <h4 class="font-weight-bold text-purple">Titulo</h4><br>
+                <form (ngSubmit)="login()" [formGroup]="formLogin">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <span class="material-icons">perm_identity</span>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="E-mail" formControlName="login">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <span class="material-icons">lock_open</span>
+                            </span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Senha" formControlName="password">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 text-left">
+                            <a class="text-black-50 pointer"><small>Esqueceu sua
+                                    senha?</small></a><br><br>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <a class="text-black-50 pointer"><small>Cadastre-se</small></a><br><br>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-purple text-white">
+                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                        <span >Entrar</span>
+                        
+                    </button>
+                </form>
+            </div>
+            <!-- <div>
+                <img src="../../assets/img (31).jpg" class="logotipo"><br>
+                <h4 class="font-weight-bold text-purple">Esqueci minha senha</h4>
+                <p class="text-black-50"><small>Para recuperar sua senha, preencha seu email no campo abaixo e aguarde
+                        as instruções em sua caixa de entrada.</small></p>
+                <br>
+                <form (ngSubmit)="recuperarSenha()" [formGroup]="formRecuperar">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <span class="material-icons">alternate_email</span>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email" formControlName="email">
+                    </div>
+                    <button type="submit" [disabled]="submitted" class="btn btn-purple text-white">Enviar</button><br><br>
+                    <a class="text-black-50 pointer" (click)="changeAcesso(1)">←
+                             voltar</a><br><br>
+                </form>
+            </div> -->
+            <!-- <div *ngIf="tipoAcesso == 3">
+                <h4 class="font-weight-bold text-purple">Alteração de senha</h4>
+                <p class="text-black-50"><small>Informe a senha recebida em sua caixa de entrada para criar uma
+                        nova.</small></p>
+                <br>
+                <form (ngSubmit)="alterarSenha()" [formGroup]="formAlterar">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <span class="material-icons">lock_open</span>
+                            </span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Senha recebida"
+                            formControlName="senhaRecebida">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <span class="material-icons">lock_open</span>
+                            </span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Nova senha"
+                            formControlName="novaSenha">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <span class="material-icons">lock_open</span>
+                            </span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Repetir nova senha"
+                            formControlName="novaSenha2">
+                    </div>
+                    <button type="submit" class="btn btn-purple text-white">Alterar</button>
+                </form>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container-fluid" id="cadastro" *ngIf="tipoAcesso == 4">
+    <div class="bg-white">
+        <app-cadastro></app-cadastro>
+    </div>
+
+</div> -->

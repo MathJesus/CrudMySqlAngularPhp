@@ -1,0 +1,35 @@
+
+<h3 class="text-primary">Lista de Usuários</h3><br>
+
+<table class="table table-bordered table-sm table-hover">
+    <thead class="table-light">
+        <td>Id</td>
+        <td>Nome de Usuario</td>
+        <td>Senha</td>
+        <td>Nome</td>
+        <td>Sobrenome</td>
+        <td>Idade</td>
+        <td>Salario</td>
+        <td>Email</td>
+        <td>Ações</td>
+    </thead>
+
+    <tr *ngFor="let user of this.users">
+        <td>{{user.id}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.password}}</td>
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.salary}}</td>
+        <td>{{user.email}}</td>
+        <td>
+            <span class="material-icons text-warning pointer" (click)="edit(user)">edit</span>
+            <span class="material-icons text-danger pointer" (click)="deleteUser(user)">delete</span>
+        </td>
+    </tr>
+</table>
+
+<div>
+    <button [routerLink]="['/add']" class="btn btn-success btn-md">Add User</button> 
+</div>
